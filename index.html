@@ -1,1 +1,166 @@
-Hello, how are you?
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <!--<meta http-equiv="pragma" content="no-cache"/>-->
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name ="viewport" content="width=device-width, initial-scale=0.5, minimum-scale=0.5, maximum-scale=0.5, user-scalable=no" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+		<meta name="theme-color" content="#ffffff">
+        <meta charset="utf-8"/>
+        <title>Rider App</title>
+
+        <style>
+            body {
+              background: #ffffff;
+              color:#222222;
+              margin: 0px;
+              padding: 0px;
+              border: 0px;
+			  font-family: Helvetica, sans-serif;
+            }
+            canvas {
+                      image-rendering: optimizeSpeed;
+                      -webkit-interpolation-mode: nearest-neighbor;
+                      -ms-touch-action: none;
+                      margin: 0px;
+                      padding: 0px;
+                      border: 0px;
+            }
+            :-webkit-full-screen #canvas {
+                 width: 100%;
+                 height: 100%;
+            }
+            div.gm4html5_div_class
+            {
+              margin: 0px;
+              padding: 0px;
+              border: 0px;
+            }
+            /* START - Login Dialog Box */
+            div.gm4html5_login
+            {
+                 padding: 20px;
+                 position: absolute;
+                 border: solid 2px #000000;
+                 background-color: #404040;
+                 color:#00ff00;
+                 border-radius: 15px;
+                 box-shadow: #101010 20px 20px 40px;
+            }
+            div.gm4html5_cancel_button
+            {
+                 float: right;
+            }
+            div.gm4html5_login_button
+            {
+                 float: left;
+            }
+            div.gm4html5_login_header
+            {
+                 text-align: center;
+            }
+            /* END - Login Dialog Box */
+            :-webkit-full-screen {
+               width: 100%;
+               height: 100%;
+            }
+			
+        </style>
+    </head>
+
+    <body>
+	
+		<h1 id="lt" style='font-size: 30px; font-size: 5vw; position: absolute; left: 0; top: 45%; width: 100%; text-align: center;'><center></center></h1>
+
+<SCRIPT LANGUAGE="JAVASCRIPT">
+var r_text = new Array ();
+r_text[0] = "Refueling the jetpack...";
+r_text[1] = "Making more coffee...";
+r_text[2] = "Getting TriMet data...";
+r_text[3] = "Folding the laundry...";
+r_text[4] = "Washing the dishes...";
+r_text[5] = "Shopping for desk chairs...";
+r_text[6] = "Considering the alternatives...";
+r_text[7] = "Doing homework...";
+r_text[8] = "Getting latest calendar events...";
+r_text[9] = "Checking the time...";
+r_text[10] = "Closing browser tabs...";
+r_text[11] = "Going through a carwash...";
+r_text[12] = "Feeding the walrus...";
+r_text[13] = "Being creative...";
+r_text[14] = "Playing a board game...";
+r_text[15] = "Turning up the volume...";
+r_text[16] = "Ckecking the score...";
+r_text[17] = "Jumping on a trampoline...";
+r_text[18] = "Looking out the window...";
+r_text[19] = "Washing the car...";
+r_text[20] = "Charging the phone...";
+r_text[21] = "Reading a book...";
+r_text[22] = "Making a decision...";
+r_text[23] = "Opening an application...";
+r_text[24] = "Setting the timer...";
+r_text[25] = "Snoozing the alarm clock...";
+r_text[26] = "Playing some music...";
+r_text[27] = "Boiling an egg...";
+r_text[28] = "Sharpening a pencil...";
+r_text[29] = "Typing an email...";
+r_text[30] = "Texting a friend...";
+r_text[31] = "Turning on the TV...";
+r_text[32] = "Tuning a guitar...";
+r_text[33] = "Writing a poem...";
+r_text[34] = "Setting the thermostat...";
+r_text[35] = "Inserting a floppy disc...";
+r_text[36] = "Counting the sheep...";
+r_text[37] = "Climbing the ladder...";
+r_text[38] = "Watching the stars...";
+r_text[39] = "Landing on Mars...";
+r_text[40] = "Pumping up the tires...";
+r_text[41] = "Drawing a picture...";
+r_text[42] = "Writing a letter...";
+r_text[43] = "Making copies...";
+r_text[44] = "Setting the table...";
+r_text[45] = "Freezing ice cubes...";
+r_text[46] = "Firing up the grill...";
+r_text[47] = "Hiking down a trail...";
+r_text[48] = "Taking the plunge...";
+r_text[49] = "Planting a tree...";
+r_text[50] = "Playing the piano...";
+r_text[51] = "Searching for an emoji...";
+r_text[52] = "Ordering pizza...";
+r_text[53] = "Lighting up the room...";
+r_text[54] = "Reading the newspaper...";
+r_text[55] = "Toasting the bagel...";
+r_text[56] = "Petting the cat...";
+r_text[57] = "Walking the dog...";
+r_text[58] = "Taking vitamins...";
+r_text[59] = "Peeling an orange...";
+r_text[60] = "Eating a salad...";
+r_text[61] = "Smelling the roses...";
+r_text[62] = "Rolling down the window...";
+r_text[63] = "Unpacking the boxes...";
+r_text[64] = "Biking the trail...";
+r_text[65] = "Ringing the doorbell...";
+
+setInterval(function() {
+  var i = Math.floor(r_text.length * Math.random());
+
+document.getElementById("lt").innerHTML = "Loading... </center><center>" + r_text[i];
+  
+}, 1000);
+</script>
+
+
+	
+	
+        <div class="gm4html5_div_class" id="gm4html5_div_id">
+            <canvas id="canvas" width="1" height="1">
+               <p>Your browser doesn't support HTML5 canvas.</p>
+            </canvas>
+        </div>
+
+
+        <!-- Run the game code -->
+        <script type="text/javascript" src="riderapp/RiderApp.js?BHKAC=875914803"></script>
+    </body>
+</html>
