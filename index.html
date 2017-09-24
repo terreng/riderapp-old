@@ -77,10 +77,11 @@
 <SCRIPT LANGUAGE="JAVASCRIPT">
 isInWebAppiOS = (window.navigator.standalone == true);
 isInWebAppChrome = (window.matchMedia('(display-mode: standalone)').matches);
-localStorage.setItem('riderapp.348279466.browserinfo.ini', '[index] ios=\''+isInWebAppiOS+'\'\nchrome=\''+isInWebAppChrome+'\'');
-console.log('IOS: '+isInWebAppiOS+' CHROME: '+isInWebAppChrome);
-
-
+isANDROID = /(android)/i.test(navigator.userAgent);
+isIOS = /(iPad|iPhone|iPod)/i.test(navigator.userAgent);
+localStorage.setItem('riderapp.348279466.browserinfo.ini', '[index] ios=\''+isInWebAppiOS+'\'\nchrome=\''+isInWebAppChrome+'\'\nISANDROID=\''+isANDROID+'\'\nISIOS=\''+isIOS+'\'');
+console.log('WA IOS: '+isInWebAppiOS+' WA CHROME: '+isInWebAppChrome);
+console.log('ANDROID: '+isANDROID+' IOS: '+isIOS);
 
 
 
@@ -160,11 +161,15 @@ document.getElementById("lt").innerHTML = "Loading... </center><center>" + r_tex
   
 }, 1000);
 </script>
+
+
+	
+	
         <div class="gm4html5_div_class" id="gm4html5_div_id">
             <canvas id="canvas" width="1" height="1">
                <p>Your browser doesn't support HTML5 canvas.</p>
             </canvas>
         </div>
-        <script type="text/javascript" src="riderapp/RiderApp.js?HWUAC=452301525"></script>
+        <script type="text/javascript" src="riderapp/RiderApp.js?RRIAC=1597512414"></script>
     </body>
 </html>
