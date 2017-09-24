@@ -7,6 +7,7 @@
 		<meta name ="viewport" content="width=device-width, initial-scale=0.5, minimum-scale=0.5, maximum-scale=0.5, user-scalable=no" />
         <meta name="apple-mobile-web-app-status-bar-style" content="black" />
 		<meta name="theme-color" content="#ffffff">
+		<script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" defer></script>
         <meta charset="utf-8"/>
         <title>Rider App</title>
 
@@ -74,6 +75,16 @@
 		<h1 id="lt" style='font-size: 30px; font-size: 5vw; position: absolute; left: 0; top: 45%; width: 100%; text-align: center;'><center></center></h1>
 
 <SCRIPT LANGUAGE="JAVASCRIPT">
+isInWebAppiOS = (window.navigator.standalone == true);
+isInWebAppChrome = (window.matchMedia('(display-mode: standalone)').matches);
+localStorage.setItem('riderapp.348279466.browserinfo.ini', '[index] ios=\''+isInWebAppiOS+'\'\nchrome=\''+isInWebAppChrome+'\'');
+console.log('IOS: '+isInWebAppiOS+' CHROME: '+isInWebAppChrome);
+
+
+
+
+
+
 var r_text = new Array ();
 r_text[0] = "Refueling the jetpack...";
 r_text[1] = "Making more coffee...";
@@ -149,18 +160,11 @@ document.getElementById("lt").innerHTML = "Loading... </center><center>" + r_tex
   
 }, 1000);
 </script>
-
-
-	
-	
         <div class="gm4html5_div_class" id="gm4html5_div_id">
             <canvas id="canvas" width="1" height="1">
                <p>Your browser doesn't support HTML5 canvas.</p>
             </canvas>
         </div>
-
-
-        <!-- Run the game code -->
-        <script type="text/javascript" src="riderapp/RiderApp.js?BHKAC=875914803"></script>
+        <script type="text/javascript" src="riderapp/RiderApp.js?HWUAC=452301525"></script>
     </body>
 </html>
